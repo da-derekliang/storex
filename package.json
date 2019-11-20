@@ -10,6 +10,7 @@
     "scripts": {
         "benchmark": "ts-node benchmarks/storex.benchmark.ts",
         "benchmark-redux": "ts-node benchmarks/redux.benchmark.ts",
+        "benchmark-json": "ts-node benchmarks/jsonapi.benchmark.ts",
         "build": "rm -rf lib typings && tsc --allowJS false --declaration",
         "build-docs": "rm -rf docs && typedoc --out docs --theme minimal --mode file --exclude **/*.test.ts src",
         "lint": "tslint --fix \"src/**/*.{ts,tsx}\"",
@@ -55,6 +56,9 @@
         "benchmark": "^2.1.4",
         "husky": "^1.0.0-rc.1",
         "jest": "^22.4.3",
+        "json-api-serializer1": "npm:json-api-serializer@1.15.1",
+        "json-api-serializer2": "npm:json-api-serializer@2.2.2",
+        "jsonapi-serializer": "^3.6.5",
         "prettier": "^1.12.0",
         "redux": "^3.7.2",
         "ts-jest": "^22.4.4",
